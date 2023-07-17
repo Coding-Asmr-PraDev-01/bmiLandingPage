@@ -40,15 +40,12 @@ body{
     margin-top: -2rem;
     margin-left: -3rem;
     height: 760px;
-
 }
-
 
 .bmiScoreContainer{
     background-color: #fff;
     color: #000;
     padding: var(--common-padding);
-    height: 200px;
     overflow: hidden;
 }
 
@@ -61,6 +58,7 @@ body{
     display: flex;
     align-items: center;
     gap: 1.3rem;
+    flex-wrap: wrap;
 }
 
 .bmiScoreContainer .brace{
@@ -272,14 +270,36 @@ body{
     background-color: rgba(255,255,255, 0.7);
 }
 
-/* @media(max-width: 1200px){
+@media(max-width: 1200px){
     .imgBx{
         position: absolute;
         display: none;
+    }
+   
+   
+}
 
+@media(max-width: 991px){
+    .navbar .nav-items{
+        display: flex;
+        flex-direction: column;
+        margin: 3rem 0;
     }
 
-    .imgBx img{
+    .logoBx{
         width: 100%;
+        text-align: center;
     }
-} */
+
+    .selectBxs{
+        flex-wrap: wrap;
+    }
+
+    .container .navbar{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+}
