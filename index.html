@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BMI Landing Page</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="navbar">
+        <div class="logoBx">
+          <h2>BeFIT</h2>
+        </div>
+        <ul class="nav-items">
+          <li class="nav-item">
+            <a href="#">Service</a>
+          </li>
+          <li class="nav-item">
+            <a href="#">Product</a>
+          </li>
+          <li class="nav-item">
+            <a href="#">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a href="#">Community</a>
+          </li>
+          <li class="nav-item">
+            <a href="#">About Us</a>
+          </li>
+        </ul>
+        <div class="btnBx">
+          <a href="#">Login</a>
+          <a href="#" class="cta-btn btn">Get Started</a>
+        </div>
+      </div>
+
+      <div class="mainBanner">
+        <div class="wrapper">
+          <div class="selectBxs">
+            <div class="selectBxBorder">
+              <div class="selectBx">
+                <i class="fa-solid fa-mars"></i>
+                <h2>Male</h2>
+              </div>
+            </div>
+            <div class="selectBxBorder">
+              <div class="selectBx">
+                <i class="fa-solid fa-venus"></i>
+                <h2>Female</h2>
+              </div>
+            </div>
+            <div class="selectBxBorder">
+              <div class="selectBx">
+                <i class="fa-sharp fa-solid fa-transgender"></i>
+                <h2>Other</h2>
+              </div>
+            </div>
+          </div>
+
+          <div class="mainDiv">
+            <div class="rangingBx">
+              <div class="headingBx">
+                <div class="leftBx">
+                  <p>Height</p>
+                  <span>Inch</span>
+                  <span>CM</span>
+                </div>
+                <div class="rightBx">
+                  <div class="heightValueBx">5 11</div>
+                </div>
+              </div>
+
+              <div class="sliderBx">
+                <input
+                  type="range"
+                  min="58"
+                  max="78"
+                  value="50"
+                  id="input-slider"
+                />
+                <div class="selector">
+                  <div class="selectVal">50</div>
+                </div>
+                <div class="markingBx">
+                  <span class="mark"></span>
+                  <span class="mark"></span>
+                  <span class="mark"></span>
+                  <span class="mark"></span>
+                  <span class="mark"></span>
+                  <span class="mark"></span>
+                  <span class="mark"></span>
+                  <span class="mark"></span>
+                  <span class="mark"></span>
+                  <span class="mark"></span>
+                  <span class="mark"></span>
+                  <span class="mark"></span>
+                  <span class="mark"></span>
+                  <span class="mark"></span>
+                  <span class="mark"></span>
+                  <span class="mark"></span>
+                  <span class="mark"></span>
+                  <span class="mark"></span>
+                </div>
+              </div>
+            </div>
+
+            <div class="rangingBx">
+              <div class="headingBx">
+                <div class="leftBx">
+                  <p>Weight</p>
+                  <span>KG</span>
+                  <span>POUNDS</span>
+                </div>
+                <div class="rightBx">
+                  <div class="weightValueBx">70.56</div>
+                </div>
+              </div>
+
+              <div class="sliderBx">
+                <input
+                  type="range"
+                  min="0"
+                  max="100"
+                  value="50"
+                  id="input-slider"
+                />
+                <div class="selector">
+                  <div class="selectVal">50</div>
+                </div>
+                <div class="markingBx">
+                  <span class="mark"></span>
+                  <span class="mark"></span>
+                  <span class="mark"></span>
+                  <span class="mark"></span>
+                  <span class="mark"></span>
+                  <span class="mark"></span>
+                  <span class="mark"></span>
+                  <span class="mark"></span>
+                  <span class="mark"></span>
+                  <span class="mark"></span>
+                  <span class="mark"></span>
+                  <span class="mark"></span>
+                  <span class="mark"></span>
+                  <span class="mark"></span>
+                  <span class="mark"></span>
+                  <span class="mark"></span>
+                  <span class="mark"></span>
+                  <span class="mark"></span>
+                </div>
+              </div>
+            </div>
+
+            <a href="#" class="calc-btn btn">Calculate BMI</a>
+          </div>
+        </div>
+
+        <div class="bmiScoreContainer">
+          <h2>Your BMI Score</h2>
+          <div class="bmiScoreBx">
+            <h1 class="score">00.00</h1>
+            <div class="brace">{</div>
+            <div class="contentBx">
+              <p>
+                Healthy weight range <br />
+                for your height :
+              </p>
+              <h3>
+                <span class="kgrange-start">59.9</span>KG -
+                <span class="kgrange-end">81</span>KG
+              </h3>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="imgBx">
+        <img src="./modal.png" alt="" />
+      </div>
+    </div>
+
+    <!-- <script>
+      const inputSlider = document.querySelectorAll("input");
+      const selectVal = document.querySelectorAll(".selector");
+      const weightValue = document.querySelector(".weightValueBx");
+      const heightValue = document.querySelector(".heightValueBx");
+      const calcBtn = document.querySelector(".calc-btn");
+      const kgRangeStart = document.querySelector(".kgrange-start");
+      const kgRangeEnd = document.querySelector('.kgrange-end');
+      const score = document.querySelector('.score');
+      let timeoutId;
+      for (let i = 0; i < inputSlider.length; i++) {
+        inputSlider[i].addEventListener("input", () => {
+          const min = +inputSlider[i].getAttribute("min");
+          const max = +inputSlider[i].getAttribute("max");
+
+          let val = inputSlider[i].value;
+          clearTimeout(timeoutId);
+
+          selectVal[i].style.display = "block";
+          selectVal[i].style.left = ((val - min) / (max - min)) * 100 + "%";
+          selectVal[i].textContent = val;
+
+          if (i == 0) {
+            heightValue.textContent = (val / 12).toFixed(2).replace(".", "'");
+          } else {
+            weightValue.textContent = val;
+          }
+
+          timeoutId = setTimeout(() => {
+            selectVal[i].style.display = "none";
+          }, 500);
+        });
+      }
+
+      calcBtn.addEventListener("click", () => {
+        let heightInMeters = heightValue.textContent.replace("'", ".") * 0.0254;
+        const bmi = (parseInt(weightValue.textContent) / (heightInMeters * heightInMeters) * 703) / 100000;
+        score.textContent = bmi.toFixed(2);
+
+        let lowerBound = 18.5;
+        let upperBound = 24.9;
+
+       // kgRangeStart.textContent = lowerBound * heightInMeters;
+        //kgRangeEnd.textContent = bmi * heightInMeters;
+      });
+    </script> -->
+  </body>
+</html>
